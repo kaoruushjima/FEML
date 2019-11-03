@@ -1,0 +1,43 @@
+/* Common Layout */
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+
+.container{
+  background: silver;
+  height: 100vh;
+  display: flex;
+}
+
+.header, .navigation, .main, .footer{
+  width: 100%;
+}
+/* 헤더 */
+.header{
+  background: yellow;
+  height: 10vh;
+}
+
+/* 네비게이션 */
+.navigation{
+  background: pink;
+  height: 20vh;
+}
+
+/* 메인컨텐츠 */
+.main{
+  background: skyblue;
+  height: 50vh;
+  display: flex;
+  flex-flow: row wrap;
+}
+.book, .news, .board, .favorite, .twitter{
+  width: 100%;
+  background: rgba(255,255,0, 0.5);
+}
+
+/* 푸터 */
+.footer{
+  background: orange;
+  height: 20vh;
+}

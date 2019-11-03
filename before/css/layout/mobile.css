@@ -1,0 +1,13 @@
+/* Mobile Layout */
+.container{
+  flex-flow: row wrap;
+}
+
+.header, .navigation, .main, .footer{
+  width: 100%;
+}
+
+.book, .news, .board, .favorite, .twitter{
+  width: 100%;
+  background: rgba(255,255,0, 0.5);
+}
