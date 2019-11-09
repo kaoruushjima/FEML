@@ -14,7 +14,6 @@
 .header{
   position: relative;
   padding: 0 15px 15px;
-  font-size: 1.5rem;
 }
 /* logo */
 .logo{
@@ -31,7 +30,6 @@
 .member li{
   display: inline-block;
   padding : 2px 0;
-  /*  명시적으로  a에 주는 것은 더 좋아보이는데 나쁜건지 ? */
 }
 .member a{
   padding: 8px 15px;
@@ -41,6 +39,7 @@
 /* search form */
 .search-form{
   text-align: right;
+  font-size: 1.6rem;
 }
 [type="search"]{
   border : 1px solid #aaaaaa;
