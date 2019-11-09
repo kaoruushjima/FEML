@@ -9,6 +9,55 @@
 .navigation, .footer{
   width: 100%;
 }
+
+/* header */
+.header{
+  position: relative;
+  padding: 0 15px 15px;
+  font-size: 1.5rem;
+}
+/* logo */
+.logo{
+  position: absolute;
+  margin: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/* member */
+.member{
+  text-align: right;
+  margin: 0;
+}
+.member li{
+  display: inline-block;
+  padding : 2px 0;
+  /*  명시적으로  a에 주는 것은 더 좋아보이는데 나쁜건지 ? */
+}
+.member a{
+  padding: 8px 15px;
+  display: inline-block;
+}
+
+/* search form */
+.search-form{
+  text-align: right;
+}
+[type="search"]{
+  border : 1px solid #aaaaaa;
+  border-radius: 5px;
+  height: 32px;
+  width: 400px;
+  padding: 0 1em;
+}
+.btn-search{
+  padding: 5px 10px;
+  border : 1px solid #666666;
+  background: #988574;
+  border-radius: 5px;
+  color: white;
+  height: 32px;
+}
+
 /* 메인콘텐츠 */
 .main{
   justify-content: space-between;
