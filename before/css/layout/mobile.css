@@ -78,3 +78,50 @@
   width: 100%;
   height: 100%;
 }
+
+/* 네비게이션 */
+.button-burger{
+  position: absolute;
+  top: 65px;
+  right: 20px;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  overflow: hidden;
+}
+
+.burger-bar{
+  width: 100%;
+  height: 25%;
+  background: white;
+  position: absolute;
+  left: 0;
+  transition: all 0.25s;
+}
+.burger-bar.round{
+  border-radius: 15px;
+}
+.burger-bar.position-top{
+  top: 0;
+}
+.burger-bar.position-middle{
+  top: 50%;
+  transform: translateY(-50%);
+}
+.burger-bar.position-bottom{
+  top: 100%;
+  transform: translateY(-105%);
+}
+.menuAct .burger-bar.position-middle{
+  transform: translate(-100%, -50%);
+}
+.menuAct .burger-bar.position-top{
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+}
+.menuAct .burger-bar.position-bottom{
+  top: 50%;
+  transform: translateY(-50%) rotate(-45deg);
+}

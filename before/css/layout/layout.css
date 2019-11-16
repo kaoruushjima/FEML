@@ -4,7 +4,7 @@
 }
 
 .container{
-  background: silver;
+  background: #fff;
   height: 100vh;
   display: flex;
 }
@@ -12,12 +12,9 @@
 .header, .navigation, .main, .footer{
   width: 100%;
 }
-/* 헤더 */
-
-/* 네비게이션 */
-.navigation{
-  background: pink;
-  height: 20vh;
+/* 헤더 */ 
+.header{
+  background: #fff;
 }
 
 /* 메인컨텐츠 */
