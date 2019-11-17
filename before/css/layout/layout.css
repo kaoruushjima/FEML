@@ -12,10 +12,6 @@
 .header, .navigation, .main, .footer{
   width: 100%;
 }
-/* 헤더 */ 
-.header{
-  background: #fff;
-}
 
 /* 메인컨텐츠 */
 .main{
