@@ -1,1 +1,71 @@
 /* Common Class */
+/* Responsive Content */
+.responsive{
+  max-width: 100%;
+  /* 원본 크기 이상 커지게 하지 않기 위해 */
+  height: auto;
+}
+.ir{
+  background:url("./../images/sprite_main.png") no-repeat;
+  height: 60px;
+  line-height: 30px;
+  padding-left: 65px;
+}
+
+[class*="-enTitle"]{
+  display: block;
+}
+
+.themeGreen{
+  color: #abd375;
+}
+
+.irBook {
+  background-position: 0 0;
+ }
+ 
+ .irNews {
+  background-position: 0 -230px;
+ }
+ 
+ .irBoard {
+  background-position: 0 -115px;
+ }
+ 
+ .irFavorite {
+  background-position: 0 -345px;
+ }
+ 
+ .irTwitter {
+  background-position: 0 -460px;
+ }
+ 
+ .themeGreen {
+  color: #abd375;
+ }
+ 
+ .themeYellow {
+  color: #e8ca58;
+ }
+ 
+ .themeBrown {
+  color: #c7b39a;
+ }
+ 
+ .themeSkyblue {
+  color: #6aaee6;
+ }
+ 
+ .themeOrange {
+  color: #eea60a;
+ }
+
+ [class*="-summary"]{
+   line-height: 1.5;
+ }
+ 
+ .circlePhoto{
+   border-radius: 50%;
+   border: 1px solid #aaa;
+   padding :0.5em;
+ }

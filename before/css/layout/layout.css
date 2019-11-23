@@ -15,18 +15,145 @@
 
 /* 메인컨텐츠 */
 .main{
-  background: skyblue;
-  height: 50vh;
-  display: flex;
+  display : flex;
   flex-flow: row wrap;
+  padding: 0 20px 1em;
+}
+
+/* 추천 서적 */
+.book-cover{
+  text-align: center;
+}
+.book-cover figcaption{
+  margin: 0.5em 0;
+  font-size: 1.5rem;
+}
+.book-info{
+  text-align: center;
+}
+.book-info dt, .book-info dd{
+  margin-left: 0;
+  display: inline-block;
+}
+.book-info dd[aria-label]{
+  display: block;
+  font-size: 2.5rem;
 }
 .book, .news, .board, .favorite, .twitter{
+  width : 100%;
+}
+
+/* 새소식 */
+.iframe-container{
   width: 100%;
-  background: rgba(255,255,0, 0.5);
+  padding-top: 56.25%;
+  height: 0;
+  position: relative;
+}
+.iframe-container iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.news-date{
+  text-align : right;
+  display : block;
+}
+/* 게시판 */
+.board{
+  position: relative;
+}
+.board-list{
+  list-style: none;
+}
+.board-list li{
+  margin: 0.5em 0;
+  display: flex;
+  align-items: center;
+  /* justify-content : between을 사용할 시에는 가상요소도 자식으로 인지해서 양쪽으로 분배하지를 못한다 */
+}
+.board-list a{
+  padding : 0.5em;
+  width: calc(100% - 7em);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.board-list time{
+  margin-left: auto;
+  /* 공부 필요 */
+}
+.board-more{
+  position: absolute;
+  top: 0.3em;
+  right: -1em;
+  padding : 1em;
+}
+/* 인기사이트 */
+.favorite-list{
+  list-style:none;
+}
+.favorite-list li{
+  margin: 0.5em 0;
+  counter-increment: number;
+}
+.favorite-list li::before{
+  display: inline-block;
+  content: counter(number);
+  color: #fff;
+  background: #eea60a;
+  padding: 0.3em 0.7em 0.5em;
+  margin-right: 1em;
+  border-radius: 50%;
+}
+.favorite-list a{
+  display: inline-block;
+  padding: 0.5em 0;
+}
+/* 트위터 */
+.twitter-user{
+  position: relative;
+  padding-right: 22%;
+  min-height: 130px;
+}
+.twitter-userProfile{
+  position: absolute;
+  top:0;
+  right: 0;
+  margin: 0;
+  width: 20%;
+  text-align: right;
+}
+.twitter-userName, .twitter-userId{
+  margin-left: 0;
+  display: inline-block;
+}
+.twitter-date{
+  display: block;
+  text-align: right;
 }
 
 /* 푸터 */
 .footer{
-  background: orange;
-  height: 20vh;
+  background:
+    linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+    linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+    linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+    linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+    linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+    linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+    background-color: #131313;
+    background-size: 20px 20px;
+    padding: 2em 20px;
+    color: #fff;
+  }
+.address{
+  font-style: normal;
+  margin-bottom: 1em;
+}
+.copyright{
+  font-size: 1.4rem;
+  text-transform: uppercase;
 }

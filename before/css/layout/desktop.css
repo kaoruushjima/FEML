@@ -108,3 +108,7 @@ input[type='search']{
 .twitter{
   width: 340px;
 }
+/* 푸터 */
+.footer{
+  text-align: center;
+}
